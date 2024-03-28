@@ -8,7 +8,7 @@ run.py # runs the program with base arguments (small depth model, fast yolo mode
     Example:
     run.py --depth_model DPT_Hybrid
 
--showDepth # shows depth map
+-show_depth # shows depth map
 
 --obj_model # specify the object detection model ('rsc/yolov8x.pt', 'rsc/yolov8n.pt')
     Example:
