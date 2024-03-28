@@ -1,3 +1,7 @@
+pip install -r requirements.txt # pip installs all required libraries
+
+
+
 run.py # runs the program with base arguments (small depth model, fast yolo model, doesn't show anything, runs on camera feed)
 
 --depth_model # specify the depth recognition model ("DPT_Large", "DPT_Hybrid", "MiDaS_small")
