@@ -1,0 +1,15 @@
+run.py # runs the program with base arguments (small depth model, fast yolo model, doesn't show anything, runs on camera feed)
+
+--depth_model # specify the depth recognition model ("DPT_Large", "DPT_Hybrid", "MiDaS_small")
+    Example:
+    run.py --depth_model DPT_Hybrid
+
+-showDepth # shows depth map
+
+--obj_model # specify the object detection model ('rsc/yolov8x.pt', 'rsc/yolov8n.pt')
+    Example:
+    run.py --obj_model rsc/yolov8x.pt
+
+-show_obj_det # shows the object detection feed
+
+-image # has the program run once on a preselected image

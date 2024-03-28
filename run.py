@@ -13,10 +13,10 @@ def parse_args():
 
     parser = argparse.ArgumentParser(description='Select a depth model')
     parser.add_argument('--depth_model', default="MiDaS_small", choices=supported_depth_models, help='select a depth perception model')
-    parser.add_argument('--show_depth', default=False, action='store_const', const=True, help='show depth map or not?')
+    parser.add_argument('-show_depth', default=False, action='store_const', const=True, help='show depth map or not?')
     parser.add_argument('--obj_model', default='rsc/yolov8x.pt', choices=supported_obj_det_models, help='select an object detection model')
-    parser.add_argument('--show_obj_det', default=False, action='store_const', const=True, help='show object detection or not?')
-    parser.add_argument('--image', default=False, action='store_const', const=True, help='use preloaded image or not?')
+    parser.add_argument('-show_obj_det', default=False, action='store_const', const=True, help='show object detection or not?')
+    parser.add_argument('-image', default=False, action='store_const', const=True, help='use preloaded image or not?')
 
     args = parser.parse_args()
     return args
