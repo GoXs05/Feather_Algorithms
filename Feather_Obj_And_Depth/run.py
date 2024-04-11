@@ -11,7 +11,7 @@ def parse_args():
     supported_depth_models = ["DPT_Large", "DPT_Hybrid", "MiDaS_small"]
     supported_obj_det_models = ['rsc/yolov8x.pt', 'rsc/yolov8n.pt']
 
-    parser = argparse.ArgumentParser(description='Select a depth model')
+    parser = argparse.ArgumentParser(description='Depth and object perception')
     parser.add_argument('--depth_model', default="MiDaS_small", choices=supported_depth_models, help='select a depth perception model')
     parser.add_argument('-show_depth', default=False, action='store_const', const=True, help='show depth map or not?')
     parser.add_argument('--obj_model', default='rsc/yolov8x.pt', choices=supported_obj_det_models, help='select an object detection model')
