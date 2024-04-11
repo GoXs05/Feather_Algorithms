@@ -1,0 +1,8 @@
+#Ignore models
+*.pt
+*.pyc
+
+#Ignore caches
+Midas\__pycache__
+utils\__pycache__
+yolo\__pycache__
