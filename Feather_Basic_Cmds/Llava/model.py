@@ -39,3 +39,10 @@ def analyze_speech(speech):
         else:
             to_return.append("move_" + c)
     return to_return
+
+
+def run_commands(cmds):
+    cmd_run = ""
+    for i in range(len(cmds)):
+        cmd_run += "drone." + cmds[i] + '\n'
+    exec(cmd_run)

@@ -21,7 +21,6 @@ def run_voice_program():
         for c in commands:
             print(c)
     if speech == "exit":
-        print(speech)
         print("Exiting the program!")
         exit()
 
@@ -33,7 +32,6 @@ def run_text_program():
         for c in commands:
             print(c)
     if speech == "exit":
-        print(speech)
         print("Exiting the program!")
         exit()
 
