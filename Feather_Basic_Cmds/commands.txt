@@ -1,0 +1,7 @@
+pip install -r requirements.txt # pip installs all required libraries
+
+
+
+run.py # runs the program with base arguments (Uses text-based commands instead of voice)
+
+-use_speech # use voice recognition/speech-based commands instead of text
